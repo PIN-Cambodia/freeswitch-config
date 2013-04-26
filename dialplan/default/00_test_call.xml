@@ -1,0 +1,6 @@
+ <extension name="TestBridge">
+   <condition field="destination_number" expression="^2443$">
+     <action application="bridge" data="sofia/internal/2443@54.251.107.12"/>
+   </condition>
+ </extension>
+
