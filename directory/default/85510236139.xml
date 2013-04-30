@@ -58,7 +58,7 @@
     <variables>
       <!--all variables here will be set on all inbound calls that originate from this user -->
       <variable name="user_context" value="default"/>
-      <variable name="effective_caller_id_name" value="Brian West"/>
+      <variable name="effective_caller_id_name" value="85510236139"/>
       <variable name="effective_caller_id_number" value="85510236139"/>
       <!-- Don't write a CDR if this is false valid values are: true, false, a_leg and b_leg -->
       <variable name="process_cdr" value="true"/>
