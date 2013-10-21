@@ -1,39 +1,23 @@
-freeswitch-config
-=================
+# freeswitch-config (Development)
 
-Freeswitch configuration files
+Use this branch on a development machine with FreeSwitch installed locally to test the app.
 
-## Firewall
+## Version Control
 
-For more information read [the Amazon EC2 Freeswitch Wiki](http://wiki.freeswitch.org/wiki/Amazon_ec2)
+Make sure you're on the development branch
 
-Open up the following ports:
+```
+sudo -u freeswitch git checkout development
+```
 
-    udp     16384:32768
-    udp     4569
-    udp     5060
-    tcp     5060
-    udp     5080
-    tcp     5080
-    tcp     8000
-    udp     8000
+### Simulating Calls
 
-## Reload SIP Profiles
+Sign in to your dev-box FreeSwitch as 855977100860@local_ip using a SIP client such as QuteCom or make a new profile under `directory/default. The sign-in name is important as it will simulate the caller_id for the calling party.
 
-    sofia profile [internal|external] [rescan|reload]
+#### Incoming
 
-## Install a module
+Placing a call to 2442 will simulate an incoming call to Chibi. You'll need to have Vibi and Chibi running locally as well to get this to work.
 
-Uncomment the desired module in `path/to/freeswitch/source/modules.conf`
+#### Outgoing
 
-    cd /path/to/freeswitch/source
-    sudo mod_<name>-install
-
-## Required modules
-
-* mod_flite (for TTS)
-* mod_shout (for mp3 playback)
-* mod_http_cache (for caching mp3 playback)
-
-    cd /path/to/freeswitch/source
-    sudo mod_flite-install && sudo mod_shout-install && sudo mod_shout-install
+Placing a call to 2444 will simulate an outgoing call to whoever is in $${test_number} on your FreeSwitch development box though the external SIP provider. See passwords.xml for configuration.
