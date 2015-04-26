@@ -24,7 +24,9 @@
       <!-- domain= is special it scans the domain from the directory to build the ACL -->
       <node type="allow" domain="$${domain}"/>
       <!-- use cidr= if you wish to allow ip ranges to this domains acl. -->
-      <!-- <node type="allow" cidr="192.168.0.0/24"/> -->
+
+      <!-- allow localhost -->
+      <node type="allow" cidr="192.168.0.0/23"/>
 
       <!-- qb -->
       <node type="allow" cidr="117.55.252.146/32"/>
