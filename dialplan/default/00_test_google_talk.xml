@@ -1,6 +1,0 @@
- <extension name="TestGoogleTalk">
-   <condition field="destination_number" expression="^2445$">
-     <action application="bridge" data="sofia/internal/2445@54.251.107.12"/>
-   </condition>
- </extension>
-

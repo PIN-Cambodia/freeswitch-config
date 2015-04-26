@@ -1,6 +1,0 @@
- <extension name="SimulateProductionCall">
-   <condition field="destination_number" expression="^2442$">
-     <action application="bridge" data="sofia/internal/2442@54.251.107.12"/>
-   </condition>
- </extension>
-

@@ -1,6 +1,0 @@
- <extension name="SimulateOutgoingSipGatewayCall">
-   <condition field="destination_number" expression="^2444$">
-     <action application="bridge" data="sofia/internal/2444@54.251.107.12"/>
-   </condition>
- </extension>
-

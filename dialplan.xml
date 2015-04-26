@@ -1,8 +1,13 @@
 <include>
   <context name="default">
     <extension name="adhearsion">
-      <condition>
+      <condition field="destination_number" expression="^2441$">
         <action application="rayo"/>
+      </condition>
+    </extension>
+    <extension name="SimulateProductionCall">
+      <condition field="destination_number" expression="^2442$">
+        <action application="bridge" data="sofia/internal/2442@freeswitch-staging.chibitxt.me"/>
       </condition>
     </extension>
   </context>
