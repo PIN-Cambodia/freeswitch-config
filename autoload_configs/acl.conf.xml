@@ -28,6 +28,9 @@
       <!-- allow localhost -->
       <node type="allow" cidr="192.168.0.0/23"/>
 
+      <!-- devbox -->
+      <node type="allow" cidr="$${devbox_acl}"/>
+
       <!-- qb -->
       <node type="allow" cidr="117.55.252.146/32"/>
 
