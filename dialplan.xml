@@ -10,5 +10,11 @@
         <action application="bridge" data="sofia/external/2442@freeswitch-staging.chibitxt.me"/>
       </condition>
     </extension>
+    <extension name="TestExternalSipGateway">
+      <condition field="destination_number" expression="^2443$">
+        <action application="export" data="sip_from_uri=$${outgoing_did_number}@chibitxt.me"/>
+        <action application="bridge" data="sofia/gateway/didlogic/$${test_number}"/>
+      </condition>
+    </extension>
   </context>
 </include>
