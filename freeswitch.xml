@@ -9,4 +9,8 @@
   <section name="dialplan" description="Regex/XML Dialplan">
     <X-PRE-PROCESS cmd="include" data="dialplan.xml"/>
   </section>
+
+  <section name="chatplan" description="Regex/XML Chatplan">
+    <X-PRE-PROCESS cmd="include" data="chatplan.xml"/>
+  </section>
 </document>

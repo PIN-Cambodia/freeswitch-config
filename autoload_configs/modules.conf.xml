@@ -5,18 +5,12 @@
     <load module="mod_event_socket"/>
     <load module="mod_sofia"/>
     <load module="mod_loopback"/>
-    <load module="mod_xml_cdr"/>
-    <load module="mod_cdr_csv"/>
     <load module="mod_commands"/>
     <load module="mod_dptools"/>
     <load module="mod_dialplan_xml"/>
     <load module="mod_sndfile"/>
     <load module="mod_native_file"/>
-    <load module="mod_http_cache"/>
-    <load module="mod_httapi"/>
-    <load module="mod_com_g729"/>
-    <load module="mod_shout"/>
-    <load module="mod_rayo"/>
-    <load module="mod_ssml"/>
+    <load module="mod_gsmopen"/>
+    <load module="mod_sms"/>
   </modules>
 </configuration>

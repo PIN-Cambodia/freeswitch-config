@@ -1,8 +1,8 @@
 <include>
   <context name="default">
-    <extension name="adhearsion">
-      <condition>
-        <action application="rayo"/>
+    <extension name="gsmopen">
+      <condition field="destination_number" expression="^2909$">
+        <action application="bridge" data="gsmopen/$${gsmopen_interface_name}/$${gsmopen_mt_number}"/>
       </condition>
     </extension>
   </context>
