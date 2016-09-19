@@ -1,7 +1,12 @@
 <include>
   <context name="default">
+    <extension name="SimulateProductionCall">
+      <condition field="destination_number" expression="^$${remote_destination}$">
+        <action application="bridge" data="sofia/external/$${remote_destination}@$${remote_external_ip}"/>
+      </condition>
+    </extension>
     <extension name="adhearsion">
-      <condition>
+      <condition field="destination_number" expression="^1234$">
         <action application="rayo"/>
       </condition>
     </extension>
