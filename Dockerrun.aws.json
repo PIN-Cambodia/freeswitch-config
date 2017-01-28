@@ -53,7 +53,7 @@
       "environment": [
         {
           "name": "SECRETS_BUCKET_NAME",
-          "value": "somlengsecrets"
+          "value": "somlengoisecrets"
         },
         {
           "name": "FREESWITCH_CONF_DIR",
