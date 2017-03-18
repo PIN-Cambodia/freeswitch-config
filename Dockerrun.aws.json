@@ -17,7 +17,7 @@
   "containerDefinitions": [
     {
       "name": "freeswitch",
-      "image": "dwilkie/freeswitch-rayo",
+      "image": "dwilkie/freeswitch-rayo:app.somleng.org",
       "essential": true,
       "memory": 995,
       "mountPoints": [
