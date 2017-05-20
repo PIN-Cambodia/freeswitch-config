@@ -19,7 +19,7 @@
       "name": "freeswitch",
       "image": "dwilkie/freeswitch-rayo:somleng.ews1294.info",
       "essential": true,
-      "memory": 995,
+      "memory": 950,
       "mountPoints": [
         {
           "sourceVolume": "freeswitch-logs",
