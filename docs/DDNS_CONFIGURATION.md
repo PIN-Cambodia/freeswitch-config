@@ -1,12 +1,14 @@
 # Dynamic DNS (DDNS) Configuration
 
-[This article] explains in detail how to setup a DDNS on AWS using a lambda function.
-
 The following steps are adapted from [this article](https://aws.amazon.com/blogs/compute/building-a-dynamic-dns-for-route-53-using-cloudwatch-events-and-lambda/)
 
 ## Configure a Route 53 Private Hosted Zone
 
 Using the AWS Web Console create a new Route 53 private hosted zone. This private hosted zone will only be used within your VPC so consider naming it something like `internal.your-domain.com.` to differentiate between the internal and external hosted zones. Also remember to include the trailing dot.
+
+## Enable DNS hostnames on your VPC
+
+Using the AWS Web Console [enable DNS hostnames on your VPC.](http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-dns.html#vpc-dns-updating)
 
 ## Download the source code for the lambda function
 
