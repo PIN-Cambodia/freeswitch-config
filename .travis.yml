@@ -11,5 +11,5 @@ deploy:
   env: freeswitch
   bucket_name: unicef-io-travis
   on:
-    repo: dwilkie/freeswitch-config
+    repo: somleng/freeswitch-config
     branch: somleng.unicef.io
