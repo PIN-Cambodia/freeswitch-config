@@ -11,5 +11,5 @@ deploy:
   env: freeswitch-production
   bucket_name: pin-somlengci
   on:
-    repo: dwilkie/freeswitch-config
+    repo: somleng/freeswitch-config
     branch: somleng.ews1294.info
