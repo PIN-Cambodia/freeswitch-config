@@ -1,11 +1,17 @@
 {
   "AWSEBDockerrunVersion": 2,
+  "volumes": [
+    {
+      "name": "freeswitch-recordings",
+      "host": {}
+    }
+  ],
   "containerDefinitions": [
     {
       "name": "freeswitch",
       "image": "dwilkie/freeswitch-rayo:somleng.unicef.io",
       "essential": true,
-      "memory": 950,
+      "memory": 750,
       "portMappings": [
         {
           "hostPort": 5222,
@@ -26,6 +32,12 @@
               "awslogs-stream-prefix": "awslogs-freeswitch"
           }
       },
+      "mountPoints": [
+        {
+          "sourceVolume": "freeswitch-recordings",
+          "containerPath": "/freeswitch-recordings"
+        }
+      ],
       "environment": [
         {
           "name": "SECRETS_BUCKET_NAME",
@@ -34,6 +46,40 @@
         {
           "name": "FREESWITCH_CONF_DIR",
           "value": "freeswitch/conf"
+        }
+      ]
+    },
+    {
+      "name": "docker-s3-sync",
+      "image": "dwilkie/docker-s3-backup",
+      "memory": 200,
+      "essential": true,
+      "logConfiguration": {
+          "logDriver": "awslogs",
+          "options": {
+              "awslogs-group": "awslogs-docker-s3-sync",
+              "awslogs-region": "ap-southeast-1",
+              "awslogs-stream-prefix": "awslogs-docker-s3-sync"
+          }
+      },
+      "mountPoints": [
+        {
+          "sourceVolume": "freeswitch-recordings",
+          "containerPath": "/freeswitch-recordings"
+        }
+      ],
+      "environment": [
+        {
+          "name": "SLEEP_BETWEEN_SYNCS",
+          "value": "1"
+        },
+        {
+          "name": "S3_PATH",
+          "value": "s3://somleng-recordings/recordings"
+        },
+        {
+          "name": "LOCAL_DIR",
+          "value": "/freeswitch-recordings"
         }
       ]
     }
