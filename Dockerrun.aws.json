@@ -75,7 +75,7 @@
         },
         {
           "name": "S3_PATH",
-          "value": "s3://somleng-recordings/recordings"
+          "value": "s3://recordings.somleng.unicef.io/recordings"
         },
         {
           "name": "LOCAL_DIR",
