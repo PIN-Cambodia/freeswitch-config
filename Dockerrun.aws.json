@@ -48,6 +48,36 @@
           "value": "freeswitch/conf"
         }
       ]
+    },
+    {
+      "name": "docker-s3-sync",
+      "image": "dwilkie/docker-s3-backup",
+      "memory": 200,
+      "essential": false,
+      "logConfiguration": {
+          "logDriver": "awslogs",
+          "options": {
+              "awslogs-group": "awslogs-docker-s3-sync",
+              "awslogs-region": "ap-southeast-1",
+              "awslogs-stream-prefix": "awslogs-docker-s3-sync"
+          }
+      },
+      "mountPoints": [
+        {
+          "sourceVolume": "freeswitch-recordings",
+          "containerPath": "/freeswitch-recordings"
+        }
+      ],
+      "environment": [
+        {
+          "name": "S3_PATH",
+          "value": "s3://somleng-recordings/recordings"
+        },
+        {
+          "name": "LOCAL_DIR",
+          "value": "/freeswitch-recordings"
+        }
+      ]
     }
   ]
 }
