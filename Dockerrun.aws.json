@@ -71,7 +71,7 @@
       "environment": [
         {
           "name": "S3_PATH",
-          "value": "s3://somleng-recordings/recordings"
+          "value": "s3://recordings.somleng.ews1294.info/recordings"
         },
         {
           "name": "LOCAL_DIR",
