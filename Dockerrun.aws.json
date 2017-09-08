@@ -50,7 +50,8 @@
       ],
       "dockerLabels": {
         "org.somleng.freeswitch.recordings.s3-path": "s3://recordings.somleng.ews1294.info/recordings",
-        "org.somleng.freeswitch.recordings.container-path": "/freeswitch-recordings"
+        "org.somleng.freeswitch.recordings.container-path": "/freeswitch-recordings",
+        "org.somleng.freeswitch.recordings.disable_uploads": "1"
       }
     }
   ]
