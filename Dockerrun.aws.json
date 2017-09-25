@@ -40,12 +40,8 @@
       ],
       "environment": [
         {
-          "name": "SECRETS_BUCKET_NAME",
-          "value": "unicef-io-somleng-config"
-        },
-        {
-          "name": "FREESWITCH_CONF_DIR",
-          "value": "freeswitch/conf"
+          "name": "FREESWITCH_CONFIG_S3_PATH",
+          "value": "s3://unicef-io-somleng-config/freeswitch/conf"
         }
       ],
       "dockerLabels": {
