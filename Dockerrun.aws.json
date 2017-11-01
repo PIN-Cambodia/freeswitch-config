@@ -3,7 +3,7 @@
   "containerDefinitions": [
     {
       "name": "freeswitch",
-      "image": "dwilkie/freeswitch-rayo",
+      "image": "dwilkie/freeswitch-rayo:freeswitch-private.somleng.unicef.io",
       "essential": true,
       "memory": 750,
       "portMappings": [
