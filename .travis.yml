@@ -1,1 +1,15 @@
 language: generic
+deploy:
+- provider: elasticbeanstalk
+  edge: true
+  access-key-id:
+    secure: "aVew2Jk7ckMoDTuS0teXkmTbhcyxYeS+REh8kx2Hod2j1/3jy42+Zwhqe8qFk87ZCY4iPZTnNrMY4y9A7Z1/hA7ygt35nEtAJKqbFjGgZi9VkUX+cf8xFtQ5xK5jNx2KznHX7cmKP5DhBbbcV+5YccMBGYD3PRLWPbQbjfxCh948uMYSmTaVQ6iLrUs79H/9sCZ/saUviGBrUSQKLafJsETf5cb+yX4lZGibK3pIm+t9vjB58tJRdpUQGQJ5Ev+4uZsXlg3DQBt6OGVPmaGEtqiFdXCfoMuGNIPDR40yHZph5KEKevdN6f/R66NgzH2YuTTBvk3ikymN3Z+hJtJ7numN+0AcyJR7kHxjaYjFFuRp4R3UJygtN5jg4wA/wKVHbLiWpcpmW1ByQUcV5HbG0yiu5I5B08bUnD+Ik9mlbEnjk/wg+0U1Cgg+QpqZjQ7k2/CxBEyLS7LEcu+y94maazXjDjyH7Um0AC+e5D4p0aaRlTlenw6j5LS1maoQzAXxHU3fjTSraflaOxaFMHs2FTAWobHwcmj05NqG6JWmPZ/FsQSEloyQF4/gOTGOvQwSh8TpWsnrI+yzTd2ydbBADFD2oV3vGMMytK3AZtfG4ZhNHpoTu0NzzoWjf07LECER6hD47padZJhxVjuxaYS6VbqFHVl1Nsux05r/uExCfPM="
+  secret-access-key:
+    secure: "dLw74JHuBTWIodX0dnALxfldpiQJ7ie3tP6p+IolMTpW/NDST1jEOhyXIhHQLlKHRGWmaNZHOg+mu7aERe+mttzVIn48zYQJTEsUtesRJlOmPX7nuI08+Ja+1i8dnc4Mn9L+Ew24DcQgjdbme8nz3E0OS/w51CaKp4S4l/Qc3vA/YzGRG5KLuTffVHPmkc1PKmQTZYFPBLll30kLKhjBSaa4hPFAfpbtl0UK6BfC1gDgAU0W7US5Ac3k0k0i/fvbV32H91QAfwqqidun9uYPNYdAJYmXCofwSpxV12IZHXQ0Vwohb4QwHZe4ooKGCqvcroEnP1xPt2IGZZku8hsv/3duXCbgd0cKEZOwgX5qtQ8NRczwDeBKRVe6SE6ajcLAchlf8CK/4BQ/wqeJM1r6YLvESNdP/iqHJ7xzIpExR8JfDcJNmWQV652VQwdgkJ0KG/VDI2XfX3qbc9r+V6Z0MoBG274GAyy4kViDm13eHa4LMKc2Ez/Tq1L45dCtvTz9xr9O4GQ1sucWXzqH8X+PP/eH/dNtAg1E63+oR5hsg95liNXf9wjh/LT2Ubj44ZWS1NeM05c5En5B02nDN8FlGTf9bkg1U0vbFIXwiFdRqWLt/wbTwXd3nYZwcK06j/m7gW4hgNWrK6py0D/J+wC3pLYIxE5YKNY8tDJbVs0rJd8="
+  region: ap-southeast-1
+  app: freeswitch
+  env: freeswitch-private
+  bucket_name: unicef-io-travis
+  on:
+    repo: somleng/freeswitch-config
+    branch: freeswitch-private.somleng.unicef.io
