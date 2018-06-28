@@ -9,7 +9,7 @@ deploy:
   region: ap-southeast-1
   app: freeswitch
   env: freeswitch-production
-  bucket_name: pin-somlengci
+  bucket_name: deploy.ews1294.info
   on:
     repo: somleng/freeswitch-config
     branch: somleng.ews1294.info
