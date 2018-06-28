@@ -1,3 +1,6 @@
+env:
+  global:
+    - AWS_REGION=ap-southeast-1
 language: generic
 deploy:
 - provider: elasticbeanstalk
