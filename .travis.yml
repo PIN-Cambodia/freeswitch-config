@@ -19,6 +19,7 @@ after_success:
 - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 - docker build -t pincambodia/somleng-freeswitch:$TRAVIS_BRANCH "https://github.com/$TRAVIS_REPO_SLUG.git#$TRAVIS_BRANCH"
 - docker push pincambodia/somleng-freeswitch
+deploy:
 - provider: elasticbeanstalk
   region: ap-southeast-1
   app: freeswitch
