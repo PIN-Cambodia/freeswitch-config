@@ -2,35 +2,27 @@ env:
   global:
   - AWS_REGION=ap-southeast-1
   # AWS Credentials
-  - secure: nhEhwYD3/BAn+gxb3quzyrCZSR0O6bdX+2Ma3wK6+utYAWRIjB9W1quO47WHsX3QkIdvQh7i9yOs6iwcDim0WFVla+498o70YjpS3ALRFX4cBxDlL/A28iSOiyqN1yPesbVo1JyCQzVNHTY2TbcXRU8THELCenqYZ97tysszF7m+ZAenCHIVY9eaoLBg1vDOl9jpyMOe8SAOJ3msNM0E+I0aCDVRodEWw1X+43uVdePCM3qtZq8sG2zYX5RlQNCxC5WjN8UOFDlOKXZMYoVZxkhH+0YxSyzkTUGnHFPXLMh+3VxiKDo9t7pjGGimmqn0yGmdv+chZDsDaSm99BwOHXUWsepkxBybpswufQua6L6tpnZ0mXomfzjez6ooNhWtm1VXtX4V5pCtIofwHnvL27kugwb1n9bo6lWx96xvvxFVbCidluI9MzYnwtWBg00RmiAeqdBbWHL+74RsUqG0RWIEUWAS8vY5JgWpM3AeY+nJyHkHqgSNkHyN3hO9IcMqCMENefqTOgVRJ3Bdp70hbyU1wfTNe8UbljYihBHMBKL7I+zxs7U2irQQIuRaim/JG14D2/0RBjcAjJ0JfNIWDhCKfWJwR88EYCM5YujtoQ/8cNRihLlKwxRu9Fju7tGR4lSKO+TJQC0yYc8GFSSdAt9C+iGonlThCGYjQ3AE7PY=
+  - secure: h1CyU33ZPSpMYbt+UkjHFbn5ONZh0mYdxhH1ZMDMU/1PJdxUTR37Zgq70VoSOKi2vvivDqNVlsZyG43KH+1BOxDR5iGein4KwqRLAeVo3WaILVZ5Wn/VK7Kk5IeBN+yyjEuT/Mz4H601ZXJREKOXU+NjiAupocR343xKyMjh5EfqM2C42/7aujDIY4Fa3kzgdWgwA2RghgjaL98uCR3PfP4eIb4Bw4oX8nnhTXGxSzjv8GJx375hemj33DvezFBe2WQ5+hZpBC5U2/XC8o3ADu1IKwn1s2hvlkMiqWQnl0jl5svmWG5FFC7iZwr+gn4OY7OVD3SWv5USFVdn698nkjIaB9SQBYp8kc2okL5ImvsTsMhTR31dzxCNkFV1o6YT4i1OqKPf9FiR4c+9tBaDi7EpkDyr7vJHnazXb3dOlerCoKXLNxS1P8RFIyVGK70e1C3yXFN5wKs9aBGBqAhyMHYOIMBv4lcdWh4bGRCSM4Kt5zinf0l+GDYxSz0xpkS8jKFsx0DnNn5khVFvhUmMkgJu67A17UCOEP1uNXWf1nDPd6pFQ+mnHrU/G6Z/b9l5vlWaLWNQwM5bFYwB8K/eSaGi0VnvVVWmTTATIKdyHHMwwEXwxt+TB0xxKs4MBeJtPhA2YdE3oANnlfjeEQ+/qxCnE7TV1Doezqdiu8oC6p4=
   # Docker Credentials
-  - secure: fv4NBjnTI4Q0/tSPe82GVoHGfHhdeDVTpEPVISTNPEFDEy9VCHyBsXZsWduB+TI6YgcBIpkZ1KbDGpbRFVVe+Dnq9FO6m69t/3Ak1+H0sjGQjI2MYna2/l3wBaRiTSll5mfZaHGi8/Lwu7+lhWmP5DmV5Be6qqh5qC39S3+MgtcKtc7QNwT0tKqxcpPS031TuACo83g5qamPArHzT1UNclT3YktmGXLCImygLrzkBNrsC/uB7l3birOTT8Ke8vUnIYw0LdiBq+PKYNJRCseLZU8PuvdfnVHtmyTca840tSVELW9prdBNl9Lb3Anbkedqpbx1u/QGYauyERLz1rrIEK9F0pmralLfmKVikXXjwXdLz6S8WM2vkf2TW7f2H6RiMZYdFsZsalVFBkS2AJqZ+vYqgH6qxUWDUo4Z9KIIll5uSwLr+UB67gLywRgKM/fA7zdQyYO/XEjUrB9M/YPfJ9lbCr14ynWpmTk/u0sE01P7JO+8bzcmhOHRmoo4PCRj/ulTNu7OY6uSgn99u+3oahjAVzeWVjpYibFUVeDPA9+OdgDrASEEKGTQ3Q6Ol6/RwRlEV54y3fvJUIt4lB2P97UMPF0TmNa/VSAZIpjFiSALWWxNab136D97lcrcCjLy/RZ+171ZSI/CRJQ4IzFicF+zRrRxmA1Xstx8Cu8XIPo=
+  - secure: QZGtwDg6Vs2CTtKwZp7rMu2REYST4BkthglEkFoXkZYsZ64NrVOvzT7Vr8y6ldDqPNGOsM1r0z7rxycolPcgslGXyj5VKPyHD6ggnMnyFSF54HcMyhyEriEp3aCCddnxmea4srRrLWlM1u78XeWOa2ENhYbrdmXko6J/OV6/sdlrGlOm9mJ2JO+YRU5SEuEwdfd9LgF95myRibUbYHZPQdpFbSdtAMzFep02ntQ0gNSUl4mQmAkhr0hbuZ4Ex+tRg294N74wXIZg3/G8b5Qa5ZRzCL712aUx/JO/LzqYGYPhqB0V7l3sM/Bxb3PZ2TKHZk5gykvSJX2a+BpEWyScPwVA54gkWUyVVID4sK0UgdUylJ5ztgQoDSJ4YOT3CZcc/DXJFttrmrTrGEkLbnSl3pzmC0isC3M8GMk63NCZmrO4XVhIrwuJzDrmQuBclmf4K3HxrBYR4vh072KMoomxHicbo7x0R5qwA7UGCc+TPeCayyLvgw8mHAwuQjLEe7NX14ipspsKUcJealL3Ws1Pre9Dw6BYs53/D9FLRDKNQSaYIFg4MLXBzY1IjPGnqJi35U2B/YtFabAiWorTCShNWlsDt/cKjYHdB76SLCh1qeNT0uBQyBhCiKNQCNg8Z0l9g+oqFwT6jAfPo13sZ5e7WI3oyAJSOoMBrWY1VfC5xy4=
 services:
 - docker
 addons:
   apt:
     packages:
-      - docker-ce
+    - docker-ce
 before_install:
-- docker build -t somleng/somleng-freeswitch .
+- docker build -t pincambodia/somleng-freeswitch .
 script:
-- docker run --rm somleng/somleng-freeswitch /usr/bin/freeswitch -version
+- docker run --rm pincambodia/somleng-freeswitch /usr/bin/freeswitch -version
 after_success:
 - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-- docker build -t somleng/somleng-freeswitch:latest "https://github.com/$TRAVIS_REPO_SLUG.git#$TRAVIS_BRANCH"
-- docker push somleng/somleng-freeswitch
-deploy:
+- docker build -t pincambodia/somleng-freeswitch:$TRAVIS_BRANCH "https://github.com/$TRAVIS_REPO_SLUG.git#$TRAVIS_BRANCH"
+- docker push pincambodia/somleng-freeswitch
 - provider: elasticbeanstalk
   region: ap-southeast-1
-  app: somleng-freeswitch
-  env: somleng-freeswitch-webserver
-  bucket_name: deploy.somleng.org
-  on:
-    branch: master
-- provider: elasticbeanstalk
-  region: ap-southeast-1
-  app: somleng-freeswitch
-  env: somleng-freeswitch-simulator-webserver
-  bucket_name: deploy.somleng.org
+  app: freeswitch
+  env: freeswitch-simulator-webserver
+  bucket_name: deploy.ews1294.info
   on:
     branch: simulator

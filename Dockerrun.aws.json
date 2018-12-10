@@ -3,7 +3,7 @@
   "containerDefinitions": [
     {
       "name": "freeswitch",
-      "image": "somleng/somleng-freeswitch",
+      "image": "pincambodia/somleng-freeswitch",
       "essential": true,
       "memoryReservation": 750,
       "portMappings": [
