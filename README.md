@@ -1,6 +1,6 @@
 # freeswitch-config
 
-[![Build Status](https://travis-ci.org/somleng/freeswitch-config.svg?branch=master)](https://travis-ci.org/somleng/freeswitch-config)
+[![Build Status](https://travis-ci.org/PIN-Cambodia/freeswitch-config.svg?branch=master)](https://travis-ci.org/PIN-Cambodia/freeswitch-config)
 
 Freeswitch configuration optimized for [mod_rayo](https://freeswitch.org/confluence/display/FREESWITCH/mod_rayo) and [Adhearsion](https://github.com/adhearsion/adhearsion). This configuration is recommended for use with [Somleng](http://www.somleng.org/).
 
