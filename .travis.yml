@@ -1,4 +1,21 @@
-language: generic
+env:
+  global:
+    # Docker credentials
+    secure: KQMwKo2C0U0Mdd8JDzCuW/OuwuGl+hzcxbRVhCjUkI0wRPW7T3Dsns+KeCuXgOswcv5mYxV8N+4c0oGjiUAjwKzEiTjHExRdl8go1djc+2wTcmO+WDqlUb4a3pz/rNnP9250vCHIHrwuHaiBUoXtEU6m5Tvmwpl5wnzRv4kHYiCBnGpCxvU/wtWGx2GaAvyf+QcAm855KJWYWwffYUls3VrMBC97RVl8w5QQVbOe8HNFZIaROp0YFbEfvxiL6rKgY3LKnnpX5xkg1B32O+IS1UuPjdrU1KS3IHnhJLCqJ6f9GyhZaLp8YQ0LKUGxL0T4KXPqZVkVuuM940b7kWPGjO0nqKMtndiYKUj8IOb2lfVAegRcJMqBkbpQxeywVNyjJ6DTagneXYHoIvX2Yk3kH/7cN9twb/MYs6LQEIa6wTZsUgEuNyWWUhCnczl5c6lkDA49xYaU4MrFLSuoYGJoVZYIEUTY1F/ggwuian9w7Pwk1QBqVyV2cTpebyIAFOYnQgta6XIj5eLjstMgKREdcJcptFs8SXiAX1njEN6Dv9b05PTgTEk12NyY/Fa+IR/9oWaO3T62EG3dPq5fRqeHMlY5ZqPfGWv9LSaLo8L9C1+sq335CJG3GjudxKto+6lBya6IrCovo4m5QsiDqiQpfacfbBAZVXzL/4tNb7Kiek8=
+services:
+- docker
+addons:
+  apt:
+    packages:
+    - docker-ce
+before_install:
+- docker build -t pincambodia/somleng-freeswitch .
+script:
+- docker run --rm pincambodia/somleng-freeswitch /usr/bin/freeswitch -version
+after_success:
+- echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+- docker build -t pincambodia/somleng-freeswitch:latest "https://github.com/$TRAVIS_REPO_SLUG.git#$TRAVIS_BRANCH"
+- docker push pincambodia/somleng-freeswitch
 deploy:
 - provider: elasticbeanstalk
   region: ap-southeast-1

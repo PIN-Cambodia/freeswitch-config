@@ -1,4 +1,4 @@
-FROM dwilkie/docker-freeswitch:latest
+FROM somleng/docker-freeswitch:1.6
 
 # Install required freeswitch modules
 

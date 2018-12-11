@@ -3,7 +3,7 @@
   "containerDefinitions": [
     {
       "name": "freeswitch",
-      "image": "dwilkie/freeswitch-rayo:somleng.ews1294.info",
+      "image": "pincambodia/somleng-freeswitch",
       "essential": true,
       "memory": 750,
       "portMappings": [
