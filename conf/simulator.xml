@@ -15,7 +15,7 @@
       </condition>
       <condition>
         <action application="answer"/>
-        <action application="sleep" data="3000"/>
+        <action application="sleep" data="45000"/>
       </condition>
     </extension>
   </context>
